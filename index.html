@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Awareness Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Environmental Awareness Survey</h1>
+        <p id="description">Help us understand your views on environmental issues.</p>
+    </header>
+    <main>
+        <form id="survey-form" action="#">
+            <div class="form-group">
+                <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name"
+                        name="name" required></label>
+                <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your Email"
+                        name="email" required></label>
+                <label for="age" id="number-label">Age (optional) <input type="number" id="number" name="age" min="10"
+                        max="120" placeholder="Age"></label>
+            </div>
+            <div class="form-group">
+                <label for="dropdown">How concerned are you about environmental issues?
+                    <select id="dropdown" name="concern-level" required>
+                        <option value="" disabled selected>Select your level of concern</option>
+                        <option value="1">Not concerned at all</option>
+                        <option value="2">Slightly concerned</option>
+                        <option value="3">Moderately concerned</option>
+                        <option value="4">Very concerned</option>
+                        <option value="5">Extremely concerned</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Would you be willing to pay more for products and services that are environmentally friendly
+                        and sustainable?</legend>
+                    <label for="pay-more-yes"><input type="radio" id="pay-more-yes" name="pay-more" value="Yes"
+                            required> Yes</label>
+                    <label for="pay-more-no"><input type="radio" id="pay-more-no" name="pay-more" value="No"> No</label>
+                    <label for="pay-more-depends"><input type="radio" id="pay-more-depends" name="pay-more"
+                            value="It depends"> It depends</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="practices">How often do you engage in environmentally friendly practices?
+                    <select id="practices" name="practices" required>
+                        <option value="" disabled selected>Select frequency</option>
+                        <option value="Daily">Daily</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Never">Never</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Select the environmental issues you are most concerned about: (check all that apply)
+                    </legend>
+                    <label for="climate-change"><input type="checkbox" id="climate-change" name="issues"
+                            value="climate-change"> Climate Change</label>
+                    <label for="pollution"><input type="checkbox" id="pollution" name="issues" value="pollution">
+                        Pollution</label>
+                    <label for="deforestation"><input type="checkbox" id="deforestation" name="issues"
+                            value="deforestation"> Deforestation</label>
+                    <label for="water-scarcity"><input type="checkbox" id="water-scarcity" name="issues"
+                            value="water-scarcity"> Water Scarcity</label>
+                    <label for="biodiversity-loss"><input type="checkbox" id="biodiversity-loss" name="issues"
+                            value="biodiversity-loss"> Biodiversity Loss</label>
+                    <label for="other-checkbox"><input type="checkbox" id="other-checkbox" name="issues" value="other">
+                        Other</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="community-involvement">Have you participated in any environmental conservation or clean-up
+                    activities in your community?
+                    <textarea id="community-involvement" name="community-involvement" rows="4"
+                        placeholder="If yes, please describe your involvement..."></textarea>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="impact-belief">Do you believe that individuals can make a significant impact on addressing
+                    environmental problems? Why or why not?
+                    <textarea id="impact-belief" name="impact-belief" rows="4"
+                        placeholder="Describe your reasons here..."></textarea>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="raise-awareness">Do you have any suggestions for how we can raise awareness and encourage
+                    more people to take action on environmental issues?
+                    <textarea id="raise-awareness" name="raise-awareness" rows="4"
+                        placeholder="Enter your suggestions here..."></textarea>
+                </label>
+            </div>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
